@@ -1,0 +1,321 @@
+:root {
+  --Gradient: hsl(6, 100%, 80%) to hsl(335, 100%, 65%);
+  --PaleBlue: hsl(243, 100%, 93%);
+  --GrayishBlue: hsl(229, 7%, 55%);
+  --DarkBlue: hsl(228, 56%, 26%);
+  --VeryDarkBlue: hsl(229, 57%, 11%);
+}
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Raleway", sans-serif;
+}
+body {
+  font-size: 14px;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: hsl(229, 57%, 11%) url("../images/bg-desktop.png");
+  background-repeat: no-repeat;
+  background-position: bottom;
+  background-size: 1879px 470px;
+}
+
+.flex {
+  width: 925px;
+  flex-wrap: wrap;
+  display: flex;
+  height: 205px;
+  justify-content: space-between;
+  align-items: flex-end;
+}
+.fylo-options {
+  width: 351px;
+  background: var(--DarkBlue);
+  height: 205px;
+  border-radius: 10px;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  border-top-right-radius: 100px;
+}
+
+.contenedor-data {
+  width: 175px;
+  height: 120px;
+  margin-left: 40px;
+  display: flex;
+  align-items: flex-start;
+  flex-direction: column;
+  justify-content: space-between;
+}
+.icons-fylo {
+  width: 100%;
+  height: 45px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.icons-fylo img {
+  background: var(--VeryDarkBlue);
+  width: 46px;
+  height: 100%;
+  padding: 12px;
+  border-radius: 10px;
+}
+.used-gb {
+  width: 540px;
+  height: 155px;
+  background: var(--DarkBlue);
+  border-radius: 10px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.storage-scale {
+  width: 465px;
+  height: 75px;
+  color: white;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+.barra {
+  height: 20px;
+  background: var(--VeryDarkBlue);
+  width: 460px;
+  border-radius: 10px;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+}
+.text-bar {
+  display: flex;
+  flex-direction: row;
+  width: 460px;
+  justify-content: space-between;
+}
+.text-bar h1 {
+  font-weight: 700;
+  margin-top: 5px;
+  font-size: 14px;
+}
+.bottom-scale {
+  margin-bottom: 0;
+}
+.size-complete {
+  height: 16px;
+  background: linear-gradient(90deg, hsl(6, 100%, 80%), hsl(335, 100%, 65%));
+  width: 342px;
+  margin-left: 2px;
+  border-radius: 10px;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+}
+.circle {
+  height: 10px;
+  width: 10px;
+  border-radius: 5px;
+  background: white;
+  margin-right: 2px;
+}
+.texto-scale {
+  flex-direction: row;
+  position: relative;
+}
+.texto-scale span {
+  font-weight: bold;
+}
+.gb-left {
+  right: 0;
+  bottom: 20px;
+  border-radius: 10px;
+  border-bottom-right-radius: 0px;
+  height: 75px;
+  width: 180px;
+  background: white;
+  position: absolute;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.text-left {
+  color: var(--GrayishBlue);
+  font-weight: 700;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.text-left span {
+  color: var(--VeryDarkBlue);
+  font-weight: 700;
+  font-size: 40px;
+  margin-right: 10px;
+}
+.triangulo {
+  right: 0;
+  bottom: -20px;
+  clip-path: polygon(100% 0, 0 0, 100% 100%);
+  position: absolute;
+  background: white;
+  height: 40px;
+  width: 30px;
+}
+
+@media screen and (max-width:375px){
+    body {
+        font-size: 14px;
+        height: 100vh;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        background: hsl(229, 57%, 11%) url("../images/bg-mobile.png");
+        background-repeat: no-repeat;        
+      }
+      .flex {
+        width: 325px;
+        flex-wrap: wrap;
+        display: flex;
+        height: 380px;
+        justify-content: space-between;
+        align-items: flex-end;
+      }
+      .fylo-options {
+        width: 325px;
+        background: var(--DarkBlue);
+        height: 200px;
+        border-radius: 10px;
+        display: flex;
+        justify-content: flex-start;
+        align-items: center;
+        border-top-right-radius: 100px;
+      }
+      
+      .contenedor-data {
+        width: 175px;
+        height: 120px;
+        margin-left: 40px;
+        display: flex;
+        align-items: flex-start;
+        flex-direction: column;
+        justify-content: space-between;
+      }
+      .icons-fylo {
+        width: 100%;
+        height: 45px;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+      }
+      .icons-fylo img {
+        background: var(--VeryDarkBlue);
+        width: 46px;
+        height: 100%;
+        padding: 12px;
+        border-radius: 10px;
+      }
+      .used-gb {
+        width: 325px;
+        height: 155px;
+        margin-top: 20px;
+        background: var(--DarkBlue);
+        border-radius: 10px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+      }
+      .storage-scale {
+        width: 265px;
+        height: 75px;
+        color: white;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+      }
+      .barra {
+        height: 20px;
+        background: var(--VeryDarkBlue);
+        width: 265px;
+        border-radius: 10px;
+        display: flex;
+        justify-content: flex-start;
+        align-items: center;
+      }
+      .text-bar {
+        display: flex;
+        flex-direction: row;
+        width: 265px;
+        justify-content: space-between;
+      }
+      .text-bar h1 {
+        font-weight: 700;
+        margin-top: 5px;
+        font-size: 14px;
+      }
+      .bottom-scale {
+        margin-bottom: 0;
+      }
+      .size-complete {
+        height: 16px;
+        background: linear-gradient(90deg, hsl(6, 100%, 80%), hsl(335, 100%, 65%));
+        width: 195px;
+        margin-left: 2px;
+        border-radius: 10px;
+        display: flex;
+        justify-content: flex-end;
+        align-items: center;
+      }
+      .circle {
+        height: 10px;
+        width: 10px;
+        border-radius: 5px;
+        background: white;
+        margin-right: 2px;
+      }
+      .texto-scale {
+        flex-direction: row;
+        position: relative;
+      }
+      .texto-scale span {
+        font-weight: bold;
+      }
+      .gb-left {
+        right: 50px;
+        top: 80px;
+        border-radius: 10px;
+        
+        height: 75px;
+        width: 180px;
+        background: white;
+        position: absolute;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+      }
+      .text-left {
+        color: var(--GrayishBlue);
+        font-weight: 700;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+      }
+      .text-left span {
+        color: var(--VeryDarkBlue);
+        font-weight: 700;
+        font-size: 40px;
+        margin-right: 10px;
+      }
+      .triangulo {
+        right: 0;
+        bottom: -20px;
+        clip-path: polygon(100% 0, 0 0, 100% 100%);
+        position: absolute;
+        background: white;
+        height: 40px;
+        width: 30px;
+        display: none;
+      }
+}
